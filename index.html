@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#EEEBE5">
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta property="og:site_name" content="The Thrift Hub"><meta property="og:type" content="website">
+<title>The Thrift Hub — Pre-loved streetwear, one of one</title>
+<meta name="description" content="Hand-picked thrift and vintage streetwear. Every piece cleaned, graded and one of one.">
+</head>
+<body data-page="home">
+<div class="preloader">
+  <div class="row between mono"><span>The Thrift Hub</span><span>Opening the bale…</span></div>
+  <div>
+    <p class="display h-l pre-line" style="overflow:hidden"><span style="display:inline-block">Digging up</span></p>
+    <p class="display h-l pre-line italic" style="overflow:hidden;margin-bottom:24px"><span style="display:inline-block">good stuff</span></p>
+    <div class="bar"><i></i></div>
+  </div>
+  <div class="count">000</div>
+</div>
+
+<main>
+  <!-- HERO: a physics bale of real pieces you can grab & throw -->
+  <section class="bale" id="bale">
+    <div class="bale-word" aria-hidden="true">
+      <span class="display">Dig</span><span class="display italic">the</span><span class="display">pile.</span>
+    </div>
+    <div class="bale-world" id="world"></div>
+    <div class="bale-top mono"><span data-scramble>Pre-loved streetwear · 1 of 1</span><span class="hide-m">18 pieces on the floor</span></div>
+    <div class="bale-foot">
+      <div>
+        <h1 class="sr">The Thrift Hub — pre-loved streetwear</h1>
+        <p class="lead" style="max-width:34ch">Real pieces, real history. <b class="hint-d">Grab &amp; throw the clothes</b><b class="hint-m">Tap a piece to flip it</b> — then find yours on the rail.</p>
+      </div>
+      <a class="btn" href="shop.html">Shop the rail <span class="arr">→</span></a>
+    </div>
+    <span class="stamp" data-rot="-14" id="heroStamp">Grade A<small>Hand picked</small></span>
+  </section>
+
+  <div class="marquee dark"><div class="marquee-track"><span>Pre-loved</span><span>One of one</span><span>Honestly graded</span><span>Cash on delivery</span><span>New drop every Friday</span></div></div>
+
+  <!-- RAIL: garments hang side-on, turn to face you (scroll / hover) -->
+  <section class="rail-sec" id="rail">
+    <div class="rail-head mono"><span>New collection</span><i></i><span class="muted">Pre-loved streetwear</span></div>
+    <div class="rail-wrap">
+      <div class="rail-bar"></div>
+      <div class="rail-row" id="railRow"></div>
+    </div>
+    <div class="rail-info">
+      <p class="mono muted" id="rMeta">—</p>
+      <p class="r-name" id="rName">—</p>
+      <p class="muted" id="rDesc"></p>
+      <div class="row" style="justify-content:center;gap:10px">
+        <a class="btn" id="rBtn" href="shop.html"><span id="rPrice">Shop</span> <span class="arr">→</span></a>
+        <button class="btn ghost" id="rAdd" type="button">+ Bag</button>
+      </div>
+    </div>
+    <div class="rail-prog mono"><span id="rIdx">01</span><i><b id="rBar"></b></i><span id="rTot">12</span></div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="section wrap manifesto">
+    <p class="mono eyebrow" style="margin-bottom:30px" data-scramble>Why thrift</p>
+    <p id="manifesto">Every piece here had a life before you <span class="img-inline g-thumb" style="--c:#4b4844"><img src="assets/img/leather-bomber.webp" alt=""></span> we find it, clean it, grade it honestly and pass it on. One of one. Never restocked. <span class="img-inline g-thumb" style="--c:#a18037"><img src="assets/img/mustard-tee.webp" alt=""></span> Better for you, lighter on the planet.</p>
+  </section>
+
+  <!-- HORIZONTAL NEW DROPS -->
+  <section class="hs" id="hs">
+    <div class="hs-inner">
+      <div class="hs-track" id="hsTrack">
+        <div class="hs-intro">
+          <p class="mono" style="color:rgba(255,255,255,.55)" data-scramble>New this week — 08 pieces</p>
+          <h2 class="display h-xl">New<br><span class="italic">drops</span></h2>
+          <div><p class="lead" style="color:rgba(255,255,255,.65);margin-bottom:24px">Hand-picked this week. Keep scrolling →</p><a class="btn light" href="drops.html">Weekly drop <span class="arr">→</span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIP REVEAL -->
+  <section class="clip" id="clip">
+    <div class="clip-inner">
+      <div class="media" style="--tone:#2a2522" data-label=""><img id="clipImg" alt="Clothes on a rail" onerror="this.parentNode.classList.add('fail')"></div>
+      <div class="clip-text">
+        <p class="mono" data-scramble>The lookbook — SS/26</p>
+        <h2 class="display h-xl" data-split>Cut once.<br>Worn for years.</h2>
+        <a class="btn light" href="lookbook.html">View lookbook <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRADING -->
+  <section class="section wrap">
+    <div class="row between" style="align-items:end;margin-bottom:50px;flex-wrap:wrap;gap:20px">
+      <h2 class="display h-l" data-split>Honest<br>grading.</h2>
+      <p class="lead muted" data-reveal>No "like new" lies. Every piece gets a grade, real measurements and photos of any flaw.</p>
+    </div>
+    <div class="grades">
+      <div class="gcard"><span class="stamp" data-stamp data-rot="-10">A</span><h3 class="display h-s">Like new</h3><p class="muted">No visible wear. Could pass for straight off the shelf.</p></div>
+      <div class="gcard"><span class="stamp olive" data-stamp data-rot="8">B</span><h3 class="display h-s">Lightly loved</h3><p class="muted">Soft fading or gentle wear that adds character.</p></div>
+      <div class="gcard"><span class="stamp ink" data-stamp data-rot="-6">C</span><h3 class="display h-s">Full of stories</h3><p class="muted">A visible mark or repair — always shown, always priced in.</p></div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section wrap" style="padding-top:0">
+    <div class="row between" style="align-items:end;margin-bottom:40px;flex-wrap:wrap">
+      <h2 class="display h-l" data-split>Shop by<br>category</h2>
+      <p class="mono muted" data-reveal>Hover to preview</p>
+    </div>
+    <div class="cat-list" id="catList"></div>
+    <div class="cat-preview" id="catPreview"><img alt=""></div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section>
+    <div class="news" data-reveal>
+      <div><p class="mono" style="opacity:.75;margin-bottom:18px">Drop alerts</p><h2 class="display h-l">First dibs<br>on Friday.</h2></div>
+      <div><p style="margin-bottom:18px;opacity:.85">Get the weekly drop 1 hour before everyone else. No spam, just pieces.</p>
+        <form id="newsForm"><input type="email" required placeholder="you@email.com" aria-label="Email"><button class="btn light" type="submit">Join <span class="arr">→</span></button></form></div>
+    </div>
+  </section>
+</main>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/Flip.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/vendor/matter.min.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/pages.js"></script>
+</body>
+</html>
